@@ -10,7 +10,7 @@
 
 <header>
     <div class="logo">🔥 Phoenix Hosting</div>
-    <a href="panel.html" class="btn">Open Panel</a>
+    <a href="login.html" class="btn big">Go to Panel</a>
 </header>
 
 <main class="hero">
