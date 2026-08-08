@@ -14,7 +14,7 @@
 <header>
     <div class="logo">🔥 Phoenix Hosting</div>
 
-    <a href="login.html" class="btn">
+    <a href="login.html" class="btn big">🚀 Go to Panel</a>
         Open Panel
     </a>
 </header>
