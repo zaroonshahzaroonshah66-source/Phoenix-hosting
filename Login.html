@@ -3,66 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Login</title>
+    <title>Phoenix Hosting - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<main class="hero">
+<main class="login-container">
 
-    <div class="features">
-        <div>
-            <h1>🔥 Phoenix Hosting</h1>
-            <p>Panel Login</p>
+    <h1>🔥 Phoenix Hosting</h1>
+    <h2>Login</h2>
 
-            <br>
+    <form>
+        <input type="text" placeholder="Username" required>
 
-            <input id="email" type="email"
-                placeholder="Email"
-                style="padding:12px;width:100%;border-radius:8px;border:1px solid #333;background:#0b0b12;color:white;">
+        <input type="password" placeholder="Password" required>
 
-            <br><br>
+        <button type="submit" class="btn big">
+            Login
+        </button>
+    </form>
 
-            <input id="password" type="password"
-                placeholder="Password"
-                style="padding:12px;width:100%;border-radius:8px;border:1px solid #333;background:#0b0b12;color:white;">
+    <p>Don't have an account?</p>
 
-            <br><br>
-
-            <button class="btn" onclick="login()">
-                Login
-            </button>
-
-            <p id="message"></p>
-        </div>
-    </div>
+    <a href="register.html" class="btn">
+        Create Account
+    </a>
 
 </main>
-
-<script>
-
-function login() {
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    if (email === "zaroonshahzaroonshah66@gmail.com" &&
-        password === "phoenix123") {
-
-        localStorage.setItem("phoenixLoggedIn", "true");
-
-        window.location.href = "panel.html";
-
-    } else {
-
-        document.getElementById("message").innerText =
-            "❌ Invalid email or password.";
-
-    }
-}
-
-</script>
 
 </body>
 </html>
